@@ -26,7 +26,7 @@ def fetch_lcs_length(x, y):
 
 def generate_lcs(b,x,i,j):
     global lcs
-    if  i == 0 or j == 0:
+    if  i < 0 or j < 0:
         return
     elif b[i][j] == "m":
         lcs += x[i]
