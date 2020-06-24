@@ -45,5 +45,6 @@ if __name__ == "__main__":
     x = "bread"
     y = "read"
     c, b = fetch_lcs_length(x, y)
+    print("LENGTH OF LCS",c[len(x)-1][len(y)-1])
     generate_lcs(b, x, len(x)-1, len(y)-1)
-    print(lcs[::-1])
+    print("LCS",lcs[::-1])
